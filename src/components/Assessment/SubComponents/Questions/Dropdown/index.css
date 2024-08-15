@@ -1,0 +1,23 @@
+.dropdown__container {
+  margin-top: 15px;
+  width: 288px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  color: #323f4b;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0px 5px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .dropdown__container {
+    width: 220px;
+  }
+  .question-dropdown-option-item {
+    font-size: 16px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,114 @@
+.questions__timer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #fafbfe;
+  height: 88vh;
+}
+
+/*
+  Mobile View
+*/
+
+@media (max-width: 767px) {
+  .questions__timer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fafbfe;
+  }
+
+  .questions__container-assignment {
+    order: 1;
+  }
+
+  .next__question-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .option__default-selected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    height: 40px;
+    width: 220px;
+    align-self: center;
+    margin-bottom: 20px;
+    background-color: #fef3c7;
+    border-radius: 3px;
+    color: #d97706;
+  }
+}
+
+@media (min-width: 767px) {
+  .option__default-selected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    height: 40px;
+    width: 300px;
+    background-color: #fef3c7;
+    border-radius: 3px;
+    color: #d97706;
+  }
+}
+
+.questions__container-assignment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 0 #7b879429;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: clamp(300px, 56%, 828px);
+  height: 650px;
+  margin-top: 20px;
+}
+
+.timer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: clamp(300px, 56%, 416px);
+}
+/* Group 909 */
+.next__question-btn {
+  align-self: end;
+}
+
+.next__question-btn-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 250px;
+}
+
+.next__question-btn-dropdown {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 480px;
+}
+
+.next-btn {
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #164687;
+  color: #ffffff;
+  border-width: 0px;
+  border-radius: 3px;
+}
+
+.loader__bg-container {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
