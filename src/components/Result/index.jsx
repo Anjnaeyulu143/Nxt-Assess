@@ -40,7 +40,7 @@ const Result = (props) => {
         };
 
         return (
-          <div className="global__bg-container">
+          <div>
             <Header />
             <div className="results__bg-container">
               <img src={Image} alt={altText} className="results__image" />
