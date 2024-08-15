@@ -4,7 +4,7 @@ import { NxeContext } from "../../../../context/NxeContext";
 import "./index.css";
 
 const Timer = (props) => {
-  const EXAM_TIME = 600 * 1000;
+  const EXAM_TIME = 60 * 1000;
 
   const {
     totalQuestions,

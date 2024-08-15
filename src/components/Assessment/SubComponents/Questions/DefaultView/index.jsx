@@ -3,7 +3,7 @@ import "./index.css";
 export const Default = (props) => {
   const { question, submitAnswer, optionSelectedIndex } = props;
   return (
-    <div>
+    <>
       <h1 className="question__text">{`${question.questionNum}.   ${question?.question_text}`}</h1>
       <hr className="divider" />
       <div className="options__container">
@@ -27,6 +27,6 @@ export const Default = (props) => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };

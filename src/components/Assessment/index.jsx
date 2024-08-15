@@ -138,21 +138,22 @@ export const Assessment = () => {
   const apiStatusSuccess = () => (
     <div className="questions__timer-container">
       <div className="questions__container-assignment">
-        {renderQuestion}
-
-        {currentQuestionIndex < QuestionsList.length - 1 && (
-          <div className={`${nextBtnStyle} next__question-btn`}>
-            {questionType === "SINGLE_SELECT" &&
-              submittedAnswers[currentQuestionIndex]?.answer === 0 && (
-                <div className="option__default-selected">
-                  <p>First Option is Selected by default</p>
-                </div>
-              )}
-            <button onClick={nextQuestion} className="next-btn">
-              Next Question
-            </button>
-          </div>
-        )}
+        <div className="render__question-container">{renderQuestion}</div>
+        <div className="button__container">
+          {currentQuestionIndex < QuestionsList.length - 1 && (
+            <div className={`${nextBtnStyle} button__default-option`}>
+              {questionType === "SINGLE_SELECT" &&
+                submittedAnswers[currentQuestionIndex]?.answer === 0 && (
+                  <div className="option__default-selected">
+                    <p>First Option is Selected by default</p>
+                  </div>
+                )}
+              <button onClick={nextQuestion} className="next-btn">
+                Next Question
+              </button>
+            </div>
+          )}
+        </div>
       </div>
       <div className="timer__container">
         <Timer
@@ -188,7 +189,7 @@ export const Assessment = () => {
   }
 
   return (
-    <div className="global__bg-container">
+    <div>
       <Header />
       <div
         className={

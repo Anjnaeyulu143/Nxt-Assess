@@ -65,6 +65,12 @@
   color: #7e858e;
 }
 
+@media (max-width: 767px) {
+  .login__input-label {
+    font-size: 12px;
+  }
+}
+
 .login__input-fields {
   padding: 8px;
   border-width: 1px;
@@ -74,7 +80,7 @@
   align-self: normal;
   flex-grow: 100;
   font-family: "Roboto";
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
 }
 
